@@ -1,0 +1,164 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Roboto, sans-serif;
+  background-color: #f8ebe9;
+}
+
+.wrapper {
+  width: 1000px;
+  margin: 20px auto 0;
+  background-color: #fff;
+  box-shadow: 0 5px 50px 20px rgba(0, 0, 0, 0.2);
+  display: flex;
+}
+
+img {
+  vertical-align: middle;
+}
+
+.left-side {
+  min-width: 360px;
+  min-height: 100%;
+  padding: 35px 30px;
+  background: url("./img/background.jpg") no-repeat;
+  background-size: 100% 100%;
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #999;
+  font-weight: 500;
+}
+.back-link {
+  font-size: 14px;
+  font-weight: 500;
+  color: #555;
+}
+.arrow-icon {
+  vertical-align: middle;
+  width: 18px;
+}
+
+.right-side {
+  padding: 30px;
+  padding-left: 90px;
+  padding-bottom: 70px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style-type: none;
+}
+nav ul li:nth-child(2) {
+  margin: 0 30px;
+}
+nav ul li a.active {
+  color: #333;
+}
+nav ul li a {
+  transition: color 0.2s ease-in-out;
+}
+nav ul li:hover a {
+  color: #333;
+}
+
+.main-title {
+  font-size: 60px;
+  margin: 0;
+  font-family: "Playfair Display";
+  position: relative;
+  font-weight: 500;
+  padding-right: 50px;
+  margin-top: 100px;
+}
+
+.main-title::after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 4px;
+  background-color: #333;
+  right: 75px;
+  bottom: 30px;
+}
+
+.author {
+  font-family: "Playfair Display";
+  margin: 30px 0;
+  font-weight: 600;
+  color: #333;
+}
+.author b {
+  color: #000;
+}
+
+.cf::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.photos {
+  display: inline-block;
+  width: 40%;
+  padding-right: 50px;
+  position: relative;
+}
+
+.text {
+  width: 60%;
+  float: right;
+}
+
+.text p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.8;
+  padding-right: 50px;
+}
+
+.preview {
+  max-width: 100%;
+  /* position: relative; */
+}
+
+.preview-link {
+  display: inline-block;
+  position: relative;
+}
+
+.playbox {
+  width: 35px;
+  height: 35px;
+  background-color: rgba(255, 255, 255, 0.7);
+  position: absolute;
+  top: 45%;
+
+  left: 45%;
+  border-radius: 50%;
+  transform: translate(-20%, -20%);
+}
+
+.play-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+}
+
+.view-all {
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #333;
+}
